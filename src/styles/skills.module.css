@@ -1,0 +1,24 @@
+.skill-category {
+  flex: 1 1 150px;
+}
+
+.skill-category-title {
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+
+.skill-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skill-list-item {
+  margin: 5px 5px 5px 0;
+}
+
+@media screen and (min-width: 800px) {
+  .skill-category {
+    flex: 1 1 250px !important;
+  }
+}
