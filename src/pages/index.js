@@ -10,7 +10,7 @@ import SEO from '../components/SEO'
 
 export default () => (
   <div id="site">
-    <SEO title="" />
+    <SEO />
     <Intro />
     <About />
     <Skills />
