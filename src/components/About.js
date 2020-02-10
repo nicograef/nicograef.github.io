@@ -14,8 +14,8 @@ export default () => (
       </p>
 
       <p>
-        To free my mind from callbacks and linter warnings I sometimes cook together with friends,
-        listen to a podcast while drinking coffee or go for a run at the Dreisam.
+        To free my mind from promises and linter warnings I like to cook with/for friends, listen to
+        a podcast while having a cup of coffee or running at the Dreisam.
       </p>
     </div>
   </section>
