@@ -18,6 +18,22 @@ body {
   font-size: 0.9rem;
 }
 
+#waving-hand {
+  animation: 4s linear infinite wave;
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(20deg) translateX(15px) translateY(-5px);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
 section {
   margin: 60px 0;
   max-width: 750px;
@@ -60,6 +76,7 @@ img {
 h2 {
   font-size: 1.9rem;
   font-weight: 400;
+  line-height: 1.5;
 }
 
 h2 b {
