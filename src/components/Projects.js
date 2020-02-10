@@ -1,5 +1,6 @@
 import React from 'react'
 
+import freiburgChallenge from '../images/projects/freiburg-challenge.jpg'
 import whatTheFlag from '../images/projects/what-the-flag.jpg'
 import sudokuApp from '../images/projects/sudoku-app.jpg'
 import countryQuiz from '../images/projects/country-quiz.jpg'
@@ -14,9 +15,8 @@ export default () =>
       <h3>
         {project.title}{' '}
         <span style={{ fontSize: 'small' }}>
-          {project.links.map(link => (
-            <Link key={link.title} title={link.title} url={link.url} />
-          ))}
+          {project.links &&
+            project.links.map(link => <Link key={link.title} title={link.title} url={link.url} />)}
         </span>
       </h3>
       <div>
@@ -35,11 +35,17 @@ export default () =>
 
 const projects = [
   {
+    title: 'Freiburg Challenge',
+    description: "A location-based social game for Freiburg I'm currently working on.",
+    image: freiburgChallenge,
+    tags: ['PWA', 'Typescript', 'React JS', 'Firebase', 'Material UI']
+  },
+  {
     title: 'What The Flag',
     description:
       'A Quizduell-like game with questions about countries, capitals and flags where users can challenge each other. Developed for my room mates as a Progressive Web App with the MERN Stack.',
     image: whatTheFlag,
-    tags: ['Progressive Web App', 'MongoDB', 'React JS', 'Express JS'],
+    tags: ['PWA', 'MongoDB', 'React JS', 'Express JS'],
     links: [
       {
         title: 'App',
