@@ -8,7 +8,8 @@ module.exports = {
   siteMetadata: {
     title: 'Nico Gräf - Software Engineer',
     siteUrl: 'https://nicograef.com',
-    description: 'Nico Gräf, software engineer.',
+    description:
+      "I'm Nico Gräf, a software engineer focused on building and designing beautiful web & app experiences.",
     author: 'Nico Gräf'
   },
   plugins: [
