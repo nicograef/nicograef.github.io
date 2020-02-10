@@ -1,5 +1,4 @@
 import React from 'react'
-import styles from '../styles/projects.module.css'
 
 import whatTheFlag from '../images/projects/what-the-flag.jpg'
 import sudokuApp from '../images/projects/sudoku-app.jpg'
