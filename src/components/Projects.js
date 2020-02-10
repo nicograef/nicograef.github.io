@@ -3,13 +3,14 @@ import React from 'react'
 import whatTheFlag from '../images/projects/what-the-flag.jpg'
 import sudokuApp from '../images/projects/sudoku-app.jpg'
 import countryQuiz from '../images/projects/country-quiz.jpg'
+import boardGamesCommunityApp from '../images/projects/board-games-community-app.png'
 
 import Link from './Link'
 import Chip from './Chip'
 
 export default () =>
-  projects.map(project => (
-    <section className="project">
+  projects.map((project, index) => (
+    <section className={`project full-width ${index % 2 ? 'left' : 'right'}`}>
       <h3>
         {project.title}{' '}
         <span style={{ fontSize: 'small' }}>
@@ -64,6 +65,23 @@ const projects = [
       {
         title: 'Github',
         url: 'https://github.com/nicograef/sudoku-trainer'
+      }
+    ]
+  },
+  {
+    title: 'Board Games App',
+    description:
+      "A functional mockup for a board games community app based on Framework7 and Cordova/Phonegap I designed for a friend's student project.",
+    image: boardGamesCommunityApp,
+    tags: ['Cordova', 'Phonegap', 'Framework7', 'Mockup', 'Prototype'],
+    links: [
+      {
+        title: 'Demo',
+        url: 'https://youtu.be/43I4IdAd3HA'
+      },
+      {
+        title: 'Github',
+        url: 'https://github.com/nicograef/board-games-community-app'
       }
     ]
   },

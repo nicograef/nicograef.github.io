@@ -19,6 +19,21 @@ body {
 
 section {
   margin: 50px 0;
+  max-width: 800px;
+  width: 100%;
+}
+
+section.full-width {
+  max-width: none;
+}
+
+section.left {
+  align-self: flex-start;
+}
+
+section.right {
+  align-self: flex-end;
+  text-align: right;
 }
 
 section h3 {
@@ -33,6 +48,7 @@ section p {
 
 img {
   width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -50,11 +66,11 @@ h2 b {
 }
 
 #site {
-  max-width: 800px;
+  max-width: 1200px;
   padding: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  align-items: center;
 }
 
 @media (min-width: 800px) {

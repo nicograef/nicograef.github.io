@@ -1,5 +1,5 @@
 .skill-category {
-  flex: 1 1 150px;
+  flex: 1 1 max(33%, 150px);
 }
 
 .skill-category-title {
@@ -19,6 +19,6 @@
 
 @media screen and (min-width: 800px) {
   .skill-category {
-    flex: 1 1 250px !important;
+    flex: none;
   }
 }

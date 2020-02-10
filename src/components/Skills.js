@@ -3,13 +3,14 @@ import React from 'react'
 import SkillCategory from './SkillCategory'
 
 export default () => (
-  <section className="skills">
+  <section className="skills full-width">
     {/* <h3 className="section-title">Stuff I'm feeling confident with</h3> */}
     <div
       style={{
         display: 'flex',
         justifyContent: 'space-between',
-        flexWrap: 'wrap'
+        flexWrap: 'wrap',
+        alignItems: 'flex-end'
       }}
     >
       {skills.map(skill => (
