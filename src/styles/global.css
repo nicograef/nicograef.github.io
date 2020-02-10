@@ -21,9 +21,14 @@ section {
   margin: 50px 0;
 }
 
+section h3 {
+  line-height: 2;
+  text-transform: uppercase;
+}
+
 section p {
   margin-top: 0;
-  line-height: 1.6;
+  line-height: 2;
 }
 
 img {
@@ -50,16 +55,6 @@ h2 b {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-}
-
-.section-content {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.section-title {
-  text-transform: uppercase;
 }
 
 @media (min-width: 800px) {

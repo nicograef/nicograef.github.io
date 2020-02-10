@@ -5,7 +5,13 @@ import SkillCategory from './SkillCategory'
 export default () => (
   <section className="skills">
     {/* <h3 className="section-title">Stuff I'm feeling confident with</h3> */}
-    <div className="section-content">
+    <div
+      style={{
+        display: 'flex',
+        justifyContent: 'space-between',
+        flexWrap: 'wrap'
+      }}
+    >
       {skills.map(skill => (
         <SkillCategory key={skill.title} title={skill.title} skills={skill.skills} />
       ))}
@@ -23,9 +29,9 @@ const skills = [
     skills: [
       'React JS',
       'Node JS',
-      'Express',
+      'Express JS',
       'Gatsby',
-      'VueJs',
+      'VueJS',
       'Material UI',
       'Progressive Web Apps',
       'Jest JS'

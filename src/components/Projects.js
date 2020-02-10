@@ -11,18 +11,20 @@ import Chip from './Chip'
 export default () =>
   projects.map(project => (
     <section className="project">
-      <h3 className="section-title">
-        {project.title}
-        <small>
+      <h3>
+        {project.title}{' '}
+        <span style={{ fontSize: 'small' }}>
           {project.links.map(link => (
-            <Link inline key={link.title} title={link.title} url={link.url} />
+            <Link key={link.title} title={link.title} url={link.url} />
           ))}
-        </small>
+        </span>
       </h3>
-      <div className="section-content">
+      <div>
         <p>
           {project.tags.map(tag => (
-            <Chip key={tag} text={tag} />
+            <>
+              <Chip key={tag} text={tag} />{' '}
+            </>
           ))}
         </p>
         <p>{project.description}</p>
@@ -37,7 +39,7 @@ const projects = [
     description:
       'A Quizduell-like game with questions about countries, capitals and flags where users can challenge each other. Developed for my room mates as a Progressive Web App with the MERN Stack.',
     image: whatTheFlag,
-    tags: ['Progressive Web App', 'MongoDB', 'React JS'],
+    tags: ['Progressive Web App', 'MongoDB', 'React JS', 'Express JS'],
     links: [
       {
         title: 'App',
@@ -69,7 +71,7 @@ const projects = [
   {
     title: 'Country Quiz NPM Module',
     description:
-      'This node module lets you create questions and quizzes (with multiple questions) about countries, their flag and their capital (or vice versa). Data, Quizzes and Questions are accessed offline (loaded from file) but the SVG-Files for the Flags need an internet connection.',
+      'I created this module as part of the What The Flag project and released it to NPM just out of curiosity. It lets you create questions and quizzes about countries, flags and capitals.',
     image: countryQuiz,
     tags: ['NPM', 'Travis CI', 'Documentation', 'Test Coverage'],
     links: [
