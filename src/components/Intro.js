@@ -4,11 +4,12 @@ export default () => (
   <header
     className="intro"
     style={{
-      maxWidth: '800px',
-      minHeight: '60vh',
+      maxWidth: '750px',
+      minHeight: '70vh',
       display: 'flex',
       flexDirection: 'column',
-      justifyContent: 'space-evenly'
+      justifyContent: 'space-evenly',
+      alignSelf: 'flex-start'
     }}
   >
     <h1>

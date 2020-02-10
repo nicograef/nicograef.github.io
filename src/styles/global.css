@@ -15,16 +15,21 @@ body {
   font-family: 'Montserrat', sans-serif;
   background: #f9f7f7;
   color: #112d4e;
+  font-size: 0.9rem;
 }
 
 section {
-  margin: 50px 0;
-  max-width: 800px;
+  margin: 60px 0;
+  max-width: 750px;
   width: 100%;
 }
 
 section.full-width {
   max-width: none;
+}
+
+section.big {
+  max-width: 900px;
 }
 
 section.left {
@@ -66,7 +71,7 @@ h2 b {
 }
 
 #site {
-  max-width: 1200px;
+  max-width: 1400px;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -74,6 +79,11 @@ h2 b {
 }
 
 @media (min-width: 800px) {
+  html,
+  body {
+    font-size: 1rem;
+  }
+
   #site {
     margin: 100px auto;
   }

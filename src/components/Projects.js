@@ -10,7 +10,7 @@ import Chip from './Chip'
 
 export default () =>
   projects.map((project, index) => (
-    <section className={`project full-width ${index % 2 ? 'left' : 'right'}`}>
+    <section className={`project big ${index % 2 ? 'left' : 'right'}`}>
       <h3>
         {project.title}{' '}
         <span style={{ fontSize: 'small' }}>
