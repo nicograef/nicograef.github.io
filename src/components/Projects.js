@@ -4,6 +4,7 @@ import freiburgChallenge from '../images/projects/freiburg-challenge.jpg'
 import whatTheFlag from '../images/projects/what-the-flag.jpg'
 import sudokuApp from '../images/projects/sudoku-app.jpg'
 import countryQuiz from '../images/projects/country-quiz.jpg'
+import wiwili from '../images/projects/wiwili.png'
 import boardGamesCommunityApp from '../images/projects/board-games-community-app.png'
 
 import Link from './Link'
@@ -90,9 +91,26 @@ const projects = [
     ]
   },
   {
+    title: 'Wiwili',
+    description:
+      "In Freiburg there's a bridge called Wiwili and it's got a cyclists sensor built into the ground. I downloaded the data from FRITZ (the open data platform of Freiburg) and used it to play around with D3.JS.",
+    image: wiwili,
+    tags: ['Data Visualisation', 'D3.JS', 'Open Data'],
+    links: [
+      {
+        title: 'Play',
+        url: 'https://nicograef.com/wiwili'
+      },
+      {
+        title: 'Github',
+        url: 'https://github.com/nicograef/wiwili'
+      }
+    ]
+  },
+  {
     title: 'Country Quiz NPM Module',
     description:
-      'I created this module as part of the What The Flag project and released it to NPM just out of curiosity. It lets you create questions and quizzes about countries, flags and capitals.',
+      'I created this module as part of the What The Flag project and published it to NPM just out of curiosity. It lets you create questions and quizzes about countries, flags and capitals. Later, I used this as a training project for testing and Travis CI.',
     image: countryQuiz,
     tags: ['NPM', 'Travis CI', 'Documentation', 'Test Coverage'],
     links: [
