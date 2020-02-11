@@ -11,7 +11,7 @@ import Chip from './Chip'
 
 export default () =>
   projects.map((project, index) => (
-    <section className={`project big ${index % 2 ? 'left' : 'right'}`}>
+    <section key={project.title} className={`project big ${index % 2 ? 'left' : 'right'}`}>
       <h3>
         {project.title}{' '}
         <span style={{ fontSize: 'small' }}>
@@ -22,9 +22,7 @@ export default () =>
       <div>
         <p>
           {project.tags.map(tag => (
-            <>
-              <Chip key={tag} text={tag} />{' '}
-            </>
+            <Chip key={tag} text={tag} />
           ))}
         </p>
         <p>{project.description}</p>

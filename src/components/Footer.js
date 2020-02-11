@@ -1,12 +1,10 @@
 import React from 'react'
 import styles from '../styles/footer.module.css'
 
-import Avatar from './Avatar'
 import Link from './Link'
 
 export default () => (
   <footer className={styles.footer}>
-    <Avatar className={styles.avatar} />
     <div className={styles.links}>
       {links.map(link => (
         <Link url={link.url} title={link.title} key={link.title} className={styles.link} />

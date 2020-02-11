@@ -1,32 +1,21 @@
 import React from 'react'
+import Avatar from './Avatar'
+import styles from '../styles/intro.module.css'
 
 export default () => (
-  <header
-    className="intro"
-    style={{
-      maxWidth: '750px',
-      minHeight: '70vh',
-      display: 'flex',
-      flexDirection: 'column',
-      justifyContent: 'space-evenly',
-      alignSelf: 'flex-start'
-    }}
-  >
+  <header className="intro">
     <h1>
-      <span
-        id="waving-hand"
-        role="img"
-        aria-label="waving hand"
-        style={{ display: 'inline-block', marginRight: 25 }}
-      >
+      <span role="img" aria-label="waving hand" className={styles.wave}>
         👋
       </span>
       Moinseeen!
     </h1>
-
-    <h2 className="short-bio">
-      I'm <b>Nico Gräf</b>, a software engineer focused on building and designing beautiful web
-      &amp; app experiences.
-    </h2>
+    <div>
+      <Avatar className={styles.avatar} />
+      <h2>
+        I'm <b>Nico Gräf</b>, a software engineer focused on building and designing beautiful web
+        &amp; app experiences.
+      </h2>
+    </div>
   </header>
 )

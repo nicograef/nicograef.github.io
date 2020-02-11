@@ -11,27 +11,11 @@ Colors
 html,
 body {
   margin: 0;
-  padding: 0;
+  padding: 0 0;
   font-family: 'Montserrat', sans-serif;
   background: #f9f7f7;
   color: #112d4e;
-  font-size: 0.9rem;
-}
-
-#waving-hand {
-  animation: 4s linear infinite wave;
-}
-
-@keyframes wave {
-  0% {
-    transform: rotate(0);
-  }
-  50% {
-    transform: rotate(20deg) translateX(15px) translateY(-5px);
-  }
-  100% {
-    transform: rotate(0);
-  }
+  font-size: 0.95rem;
 }
 
 section {
@@ -73,39 +57,52 @@ img {
   object-fit: cover;
 }
 
-h2 {
-  font-size: 1.9rem;
-  font-weight: 400;
-  line-height: 1.5;
-}
-
-h2 b {
-  font-weight: 900;
-}
-
 ::selection {
   background: #ffdc00;
 }
 
 #site {
-  max-width: 1400px;
-  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 600px) {
   html,
   body {
     font-size: 1rem;
   }
 
   #site {
-    margin: 100px auto;
+    padding: 0 40px;
+    max-width: 800px;
+  }
+}
+
+@media (min-width: 1200px) {
+  html,
+  body {
+    font-size: 1rem;
   }
 
-  h2 {
-    font-size: 3rem;
+  #site {
+    margin: 0 auto 100px auto;
+    max-width: 1000px;
+  }
+}
+
+@media (min-width: 1600px) {
+  html,
+  body {
+    font-size: 1rem;
+  }
+
+  #site {
+    padding: 0 100px;
+    margin: 0 auto 100px auto;
+    max-width: 1600px;
   }
 }

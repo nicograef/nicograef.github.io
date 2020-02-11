@@ -5,10 +5,6 @@ footer {
   align-items: center;
 }
 
-.avatar {
-  margin-bottom: 50px;
-}
-
 .links {
   /* margin: 50px auto; */
   display: flex;
@@ -16,7 +12,7 @@ footer {
   justify-content: center;
 }
 
-@media screen and (min-width: 800px) {
+@media (min-width: 800px) {
   footer {
     margin-top: 150px;
   }
