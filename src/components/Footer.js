@@ -6,8 +6,8 @@ import Link from './Link'
 export default () => (
   <footer className={styles.footer}>
     <div className={styles.links}>
-      {links.map(link => (
-        <Link url={link.url} title={link.title} key={link.title} className={styles.link} />
+      {links.map((link) => (
+        <Link url={link.url} title={link.title} key={link.title} />
       ))}
     </div>
   </footer>
@@ -16,22 +16,18 @@ export default () => (
 const links = [
   {
     title: 'Email',
-    url: 'mailto:graef.nico@gmail.com'
+    url: 'mailto:graef.nico@gmail.com',
   },
   {
     title: 'Github',
-    url: 'https://github.com/nicograef'
-  },
-  {
-    title: 'Twitter',
-    url: 'https://twitter.com/nicograef'
+    url: 'https://github.com/nicograef',
   },
   {
     title: 'LinkedIn',
-    url: 'https://linkedin.com/in/nicograef'
+    url: 'https://linkedin.com/in/nicograef',
   },
   {
     title: 'Xing',
-    url: 'https://xing.com/profile/Nico_Graef2/'
-  }
+    url: 'https://xing.com/profile/Nico_Graef2/',
+  },
 ]

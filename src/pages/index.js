@@ -4,7 +4,7 @@ import Intro from '../components/Intro'
 import About from '../components/About'
 import Skills from '../components/Skills'
 import Projects from '../components/Projects'
-import Footer from '../components/Footer'
+// import Footer from '../components/Footer'
 
 import SEO from '../components/SEO'
 
@@ -13,8 +13,8 @@ export default () => (
     <SEO />
     <Intro />
     <About />
+    {/* <Footer /> */}
     <Skills />
     <Projects />
-    <Footer />
   </div>
 )

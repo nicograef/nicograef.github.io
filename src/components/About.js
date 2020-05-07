@@ -15,8 +15,36 @@ export default () => (
       interested in Open Source projects and Progressive Web Apps built with React JS.
     </p>
     <p>
-      To free my mind from async code and linter warnings I like to cook with/for friends, listen to
-      a podcast while having a cup of coffee or running at the Dreisam.
+      To free my mind from async code and linter warnings I like to cook with and for friends,
+      listen to a podcast while having a cup of coffee and running at the Dreisam{' '}
+      <span role="img" aria-label="river">
+        🌊
+      </span>
+      .
+    </p>
+    <p style={{ fontSize: 'smaller', marginLeft: -10, marginTop: '2rem' }}>
+      {links.map((link) => (
+        <Link url={link.url} title={link.title} key={link.title} />
+      ))}
     </p>
   </section>
 )
+
+const links = [
+  {
+    title: 'Github',
+    url: 'https://github.com/nicograef',
+  },
+  {
+    title: 'LinkedIn',
+    url: 'https://linkedin.com/in/nicograef',
+  },
+  {
+    title: 'Xing',
+    url: 'https://xing.com/profile/Nico_Graef2/',
+  },
+  {
+    title: 'Email',
+    url: 'mailto:graef.nico@gmail.com',
+  },
+]
