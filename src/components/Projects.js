@@ -3,6 +3,7 @@ import React from 'react'
 import freiburgChallenge from '../images/projects/freiburg-challenge.jpg'
 import whatTheFlag from '../images/projects/what-the-flag.jpg'
 import sudokuApp from '../images/projects/sudoku-app.jpg'
+import lokalrunde from '../images/projects/lokalrunde.jpg'
 import sudokuSolver from '../images/projects/sudoku-solver.jpg'
 import countryQuiz from '../images/projects/country-quiz.jpg'
 import wiwili from '../images/projects/wiwili.png'
@@ -81,19 +82,19 @@ const projects = [
     ],
   },
   {
-    title: 'Board Games App / 2018',
+    title: 'Lokalrunde / 2020',
     description:
-      "A functional mockup for a board games community app based on Framework7 and Cordova/Phonegap I designed for a friend's student project.",
-    image: boardGamesCommunityApp,
-    tags: ['Cordova', 'Framework7', 'Mockup', 'Prototype'],
+      'For the german-wide online hackathon #WirVsVirus my team designed and prototyped an app to support local bars and cafes during the covid-19 crisis.',
+    image: lokalrunde,
+    tags: ['Hackathon', 'Angular JS', 'Firebase'],
     links: [
       {
-        title: 'Demo',
-        url: 'https://youtu.be/43I4IdAd3HA',
+        title: 'Pitch Video',
+        url: 'https://youtu.be/4sLsV29zH40',
       },
       {
         title: 'Github',
-        url: 'https://github.com/nicograef/board-games-community-app',
+        url: 'https://github.com/VirtualCoffee/lokalrunde',
       },
     ],
   },
@@ -107,6 +108,23 @@ const projects = [
       {
         title: 'Video',
         url: 'https://youtu.be/dsMQO0oeDec',
+      },
+    ],
+  },
+  {
+    title: 'Board Games App / 2018',
+    description:
+      "A functional mockup for a board games community app based on Framework7 and Cordova/Phonegap I designed for a friend's student project.",
+    image: boardGamesCommunityApp,
+    tags: ['Cordova', 'Framework7', 'Mockup', 'Prototype'],
+    links: [
+      {
+        title: 'Demo',
+        url: 'https://youtu.be/43I4IdAd3HA',
+      },
+      {
+        title: 'Github',
+        url: 'https://github.com/nicograef/board-games-community-app',
       },
     ],
   },
