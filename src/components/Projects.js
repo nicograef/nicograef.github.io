@@ -9,6 +9,7 @@ import wiwili from '../images/projects/wiwili.png'
 import classification from '../images/projects/classification.jpg'
 import kuunery from '../images/projects/kuunery.jpg'
 import makelangelo from '../images/projects/makelangelo.jpg'
+import smartCoffee from '../images/projects/smart-coffee.jpg'
 import boardGamesCommunityApp from '../images/projects/board-games-community-app.png'
 
 import Link from './Link'
@@ -93,6 +94,19 @@ const projects = [
       {
         title: 'Github',
         url: 'https://github.com/nicograef/board-games-community-app',
+      },
+    ],
+  },
+  {
+    title: 'Smart Coffee / 2015',
+    description:
+      'As part of a student project a fellow stundent and I hacked a coffee machine to accept orders via wifi. We also built a robot arm to serve cups and improved some sensors.',
+    image: smartCoffee,
+    tags: ['Arduino', 'C++', '3D-Printing', 'Embedded'],
+    links: [
+      {
+        title: 'Video',
+        url: 'https://youtu.be/dsMQO0oeDec',
       },
     ],
   },
