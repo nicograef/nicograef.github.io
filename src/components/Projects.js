@@ -11,7 +11,9 @@ import classification from '../images/projects/classification.jpg'
 import kuunery from '../images/projects/kuunery.jpg'
 import makelangelo from '../images/projects/makelangelo.jpg'
 import smartCoffee from '../images/projects/smart-coffee.jpg'
-import boardGamesCommunityApp from '../images/projects/board-games-community-app.png'
+import mshSportpferde from '../images/projects/msh-sportpferde.jpg'
+import wirkraft from '../images/projects/wirkraft.jpg'
+import boardGamesCommunityApp from '../images/projects/board-games-community-app.jpg'
 
 import Link from './Link'
 import Chip from './Chip'
@@ -35,7 +37,7 @@ export default () =>
           ))}
         </p>
         <p>{project.description}</p>
-        <img src={project.image} alt={project.title} title={project.title} />
+        <img src={project.image} alt={project.title} title={project.title} loading="lazy" />
       </div>
     </section>
   ))
@@ -142,23 +144,6 @@ const projects = [
     ],
   },
   {
-    title: 'Wiwili / 2019',
-    description:
-      "In Freiburg there's a bridge called Wiwili and it's got a cyclists sensor built into the ground. I downloaded the data from FRITZ (the open data platform of Freiburg) and used it to play around with D3.JS.",
-    image: wiwili,
-    tags: ['Data Visualisation', 'D3.JS', 'Open Data'],
-    links: [
-      {
-        title: 'Play',
-        url: 'https://nicograef.com/wiwili',
-      },
-      {
-        title: 'Github',
-        url: 'https://github.com/nicograef/wiwili',
-      },
-    ],
-  },
-  {
     title: 'ML Classification / 2016',
     description:
       'After completing an online course about Machine Learning I played around with the MNIST-dataset, implemented my version of the Genetic Algorithm and coded a Feed Forward Neural Network.',
@@ -172,6 +157,19 @@ const projects = [
     ],
   },
   {
+    title: 'Wirkraft / 2018',
+    description:
+      'In 2018 I developed a native android app, a hybrid app and several features for the web backend of a community platform.',
+    image: wirkraft,
+    tags: ['Vue JS', 'Cordova', 'Couch DB', 'Android'],
+    links: [
+      {
+        title: 'Website',
+        url: 'http://wirkraft.com',
+      },
+    ],
+  },
+  {
     title: 'Kuunery / 2019',
     description:
       'As an experiment in online marketing I invented an art magazine startup, set up an online shop with shopify and used instagram for marketing.',
@@ -179,6 +177,20 @@ const projects = [
     tags: ['Online Marketing', 'Instagram', 'Shopify', 'Art'],
     links: [],
   },
+  {
+    title: 'MSH Sportpferde / 2017',
+    description:
+      "As a webdesign freelancer I designed and (hand-)coded the website for an equestrian farm. Later they asked me to help build an online presence. That's kind of how I got into online marketing.",
+    image: mshSportpferde,
+    tags: ['Webdesign', 'Online Marketing', 'Instagram', 'Google'],
+    links: [
+      {
+        title: 'Website',
+        url: 'https://msh-sportpferde.de',
+      },
+    ],
+  },
+
   {
     title: 'Meisterwunder Pop-up Store / 2015',
     description:
@@ -194,6 +206,23 @@ const projects = [
       {
         title: 'Video',
         url: 'https://youtu.be/p4j1_mpg-3o',
+      },
+    ],
+  },
+  {
+    title: 'Wiwili / 2019',
+    description:
+      "In Freiburg there's a bridge called Wiwili and it's got a cyclists sensor built into the ground. I downloaded the data from FRITZ (the open data platform of Freiburg) and used it to play around with D3.JS.",
+    image: wiwili,
+    tags: ['Data Visualisation', 'D3.JS', 'Open Data'],
+    links: [
+      {
+        title: 'Play',
+        url: 'https://nicograef.com/wiwili',
+      },
+      {
+        title: 'Github',
+        url: 'https://github.com/nicograef/wiwili',
       },
     ],
   },
