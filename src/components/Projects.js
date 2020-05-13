@@ -10,9 +10,11 @@ import wiwili from '../images/projects/wiwili.png'
 import classification from '../images/projects/classification.jpg'
 import kuunery from '../images/projects/kuunery.jpg'
 import makelangelo from '../images/projects/makelangelo.jpg'
+import project0742 from '../images/projects/project0742.jpg'
 import smartCoffee from '../images/projects/smart-coffee.jpg'
 import mshSportpferde from '../images/projects/msh-sportpferde.jpg'
 import wirkraft from '../images/projects/wirkraft.jpg'
+import tutorialRunner from '../images/projects/tutorial-runner.jpg'
 import boardGamesCommunityApp from '../images/projects/board-games-community-app.jpg'
 
 import Link from './Link'
@@ -114,6 +116,19 @@ const projects = [
     ],
   },
   {
+    title: 'Tutorial Runner Game / 2015',
+    description:
+      'Back in 2015 I dreamed of being a game developer. So I decided to try out the Unreal Engine. After completing a tutorial I created this runner game. I also composed the music, created the game sounds and some textures.',
+    image: tutorialRunner,
+    tags: ['Unreal Engine', 'C++', 'Game Dev'],
+    links: [
+      {
+        title: 'Video',
+        url: 'https://youtu.be/k_JBZWA0-zM',
+      },
+    ],
+  },
+  {
     title: 'Board Games App / 2018',
     description:
       "A functional mockup for a board games community app based on Framework7 and Cordova/Phonegap I designed for a friend's student project.",
@@ -170,19 +185,11 @@ const projects = [
     ],
   },
   {
-    title: 'Kuunery / 2019',
-    description:
-      'As an experiment in online marketing I invented an art magazine startup, set up an online shop with shopify and used instagram for marketing.',
-    image: kuunery,
-    tags: ['Online Marketing', 'Instagram', 'Shopify', 'Art'],
-    links: [],
-  },
-  {
     title: 'MSH Sportpferde / 2017',
     description:
       "As a webdesign freelancer I designed and (hand-)coded the website for an equestrian farm. Later they asked me to help build an online presence. That's kind of how I got into online marketing.",
     image: mshSportpferde,
-    tags: ['Webdesign', 'Online Marketing', 'Instagram', 'Google'],
+    tags: ['Web Design', 'Online Marketing', 'Instagram', 'Google'],
     links: [
       {
         title: 'Website',
@@ -190,7 +197,6 @@ const projects = [
       },
     ],
   },
-
   {
     title: 'Meisterwunder Pop-up Store / 2015',
     description:
@@ -225,6 +231,31 @@ const projects = [
         url: 'https://github.com/nicograef/wiwili',
       },
     ],
+  },
+  {
+    title: 'Project 0742 / 2016',
+    description:
+      'A simple website maker I made to learn some node.js stuff. Sadly, I lost the final version of my code and this repo only represents the alpha version.',
+    image: project0742,
+    tags: ['Node JS', 'Web Design'],
+    links: [
+      {
+        title: 'Video',
+        url: 'https://youtu.be/Y6JF0A9bYoE',
+      },
+      {
+        title: 'Github',
+        url: 'https://github.com/nicograef/project0742',
+      },
+    ],
+  },
+  {
+    title: 'Kuunery / 2019',
+    description:
+      'As an experiment in online marketing I invented an art magazine startup, set up an online shop with shopify and used instagram for marketing.',
+    image: kuunery,
+    tags: ['Online Marketing', 'Instagram', 'Shopify', 'Art'],
+    links: [],
   },
   {
     title: 'Country Quiz NPM Module / 2019',
