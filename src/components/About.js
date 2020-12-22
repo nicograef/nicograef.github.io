@@ -44,6 +44,10 @@ const links = [
     url: 'https://xing.com/profile/Nico_Graef2/',
   },
   {
+    title: 'Twitter',
+    url: 'https://twitter.com/nicograef/',
+  },
+  {
     title: 'Email',
     url: 'mailto:graef.nico@gmail.com',
   },

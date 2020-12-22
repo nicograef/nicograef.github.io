@@ -56,7 +56,7 @@ const skills = [
   },
   {
     title: 'Backend',
-    skills: ['Firebase', 'MongoDB', 'Express', 'CouchDB']
+    skills: ['SQL & MySQL', 'Firebase', 'MongoDB', 'Express', 'CouchDB']
   },
   {
     title: 'DevOps',
