@@ -10,10 +10,10 @@ export default () => (
         display: 'flex',
         justifyContent: 'space-between',
         flexWrap: 'wrap',
-        alignItems: 'flex-end'
+        alignItems: 'flex-end',
       }}
     >
-      {skills.map(skill => (
+      {skills.map((skill) => (
         <SkillCategory key={skill.title} title={skill.title} skills={skill.skills} />
       ))}
     </div>
@@ -23,43 +23,26 @@ export default () => (
 const skills = [
   {
     title: 'Languages',
-    skills: ['Typescript', 'Javascript', 'HTML & CSS', 'Java', 'Python', 'JSON']
+    skills: ['Typescript', 'Javascript', 'HTML & CSS', 'Java', 'Python', 'JSON'],
   },
   {
     title: 'Frameworks',
-    skills: [
-      'React JS',
-      'Node JS',
-      'Express JS',
-      'Gatsby',
-      'VueJS',
-      'Material UI',
-      'Progressive Web Apps',
-      'Jest JS'
-    ]
+    skills: ['React JS', 'Node JS', 'VueJS', 'Express JS', 'Gatsby', 'Progressive Web Apps', 'Jest JS'],
   },
   {
     title: 'Tools',
-    skills: [
-      'Git & Github',
-      'Bash & Linux',
-      'VS Code',
-      'Chrome DevTools',
-      'NPM',
-      'Postman',
-      'Cordova & Phonegap'
-    ]
-  },
-  {
-    title: 'Design',
-    skills: ['Adobe XD', 'Wireframing', 'Design Thinking', 'User Testing', 'Responsive Web Design']
+    skills: ['Git & Github', 'Bash & Linux', 'VS Code', 'Chrome DevTools', 'NPM', 'Postman'],
   },
   {
     title: 'Backend',
-    skills: ['Firebase', 'MongoDB', 'Express', 'CouchDB']
+    skills: ['NodeJS', 'Firebase', 'MongoDB', 'Express', 'CouchDB'],
   },
   {
     title: 'DevOps',
-    skills: ['Docker', 'Testing', 'Travis CI', 'Heroku']
-  }
+    skills: ['Testing', 'CI / CD', 'Google Cloud', 'Travis CI', 'Docker', 'Heroku'],
+  },
+  {
+    title: 'Design',
+    skills: ['Adobe XD', 'Wireframing', 'Design Thinking', 'User Testing', 'Responsive Web Design'],
+  },
 ]
