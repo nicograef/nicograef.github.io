@@ -4,16 +4,15 @@ import SkillCategory from './SkillCategory'
 
 export default () => (
   <section className="skills full-width">
-    {/* <h3 className="section-title">Stuff I'm feeling confident with</h3> */}
     <div
       style={{
         display: 'flex',
         justifyContent: 'space-between',
         flexWrap: 'wrap',
-        alignItems: 'flex-end'
+        alignItems: 'flex-end',
       }}
     >
-      {skills.map(skill => (
+      {skills.map((skill) => (
         <SkillCategory key={skill.title} title={skill.title} skills={skill.skills} />
       ))}
     </div>
@@ -23,43 +22,26 @@ export default () => (
 const skills = [
   {
     title: 'Languages',
-    skills: ['Typescript', 'Javascript', 'HTML & CSS', 'Java', 'Python', 'JSON']
+    skills: ['Typescript', 'Javascript', 'HTML & CSS', 'SQL', 'Java', 'Python', 'JSON'],
   },
   {
     title: 'Frameworks',
-    skills: [
-      'React JS',
-      'Node JS',
-      'Express JS',
-      'Gatsby',
-      'VueJS',
-      'Material UI',
-      'Progressive Web Apps',
-      'Jest JS'
-    ]
+    skills: ['React JS', 'Node JS', 'Express JS', 'Gatsby', 'VueJS', 'Material UI', 'Progressive Web Apps', 'Jest JS'],
   },
   {
     title: 'Tools',
-    skills: [
-      'Git & Github',
-      'Bash & Linux',
-      'VS Code',
-      'Chrome DevTools',
-      'NPM',
-      'Postman',
-      'Cordova & Phonegap'
-    ]
+    skills: ['Git & Github', 'Bash & Linux', 'VS Code', 'Chrome DevTools', 'NPM', 'Postman', 'Cordova & Phonegap'],
   },
   {
     title: 'Design',
-    skills: ['Adobe XD', 'Wireframing', 'Design Thinking', 'User Testing', 'Responsive Web Design']
+    skills: ['Adobe XD', 'Wireframing', 'Design Thinking', 'User Testing', 'Responsive Web Design'],
   },
   {
     title: 'Backend',
-    skills: ['SQL & MySQL', 'Firebase', 'MongoDB', 'Express', 'CouchDB']
+    skills: ['Node JS', 'SQL & MySQL', 'Firebase', 'MongoDB', 'Express', 'CouchDB'],
   },
   {
     title: 'DevOps',
-    skills: ['Docker', 'Testing', 'Travis CI', 'Heroku']
-  }
+    skills: ['Docker', 'Testing', 'Travis CI', 'Heroku'],
+  },
 ]
