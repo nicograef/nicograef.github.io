@@ -26,22 +26,22 @@ const skills = [
   },
   {
     title: 'Frameworks',
-    skills: ['React JS', 'Node JS', 'Express JS', 'Gatsby', 'VueJS', 'Material UI', 'Progressive Web Apps', 'Jest JS'],
+    skills: ['React JS', 'Node JS', 'VueJS', 'Express JS', 'Gatsby', 'Progressive Web Apps', 'Jest JS'],
   },
   {
     title: 'Tools',
-    skills: ['Git & Github', 'Bash & Linux', 'VS Code', 'Chrome DevTools', 'NPM', 'Postman', 'Cordova & Phonegap'],
+    skills: ['Git & Github', 'Bash & Linux', 'VS Code', 'Chrome DevTools', 'NPM', 'Postman'],
+  },
+  {
+    title: 'Backend',
+    skills: ['Node JS', 'SQL & MySQL', 'Firebase', 'MongoDB', 'GCP', 'Express', 'CouchDB'],
+  },
+  {
+    title: 'DevOps',
+    skills: ['Testing', 'CI / CD', 'Google Cloud', 'Travis CI', 'Docker', 'Heroku'],
   },
   {
     title: 'Design',
     skills: ['Adobe XD', 'Wireframing', 'Design Thinking', 'User Testing', 'Responsive Web Design'],
-  },
-  {
-    title: 'Backend',
-    skills: ['Node JS', 'SQL & MySQL', 'Firebase', 'MongoDB', 'Express', 'CouchDB'],
-  },
-  {
-    title: 'DevOps',
-    skills: ['Docker', 'Testing', 'Travis CI', 'Heroku'],
   },
 ]
